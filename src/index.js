@@ -1,4 +1,5 @@
 import 'cs-styles/css/cs-styles.css'
+import './index.css'
 
 document.addEventListener('DOMContentLoaded', function() {
   document.querySelectorAll('.code').forEach(function(element) {
