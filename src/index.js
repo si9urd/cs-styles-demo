@@ -11,10 +11,10 @@ document.addEventListener('DOMContentLoaded', function() {
     element.innerHTML = element.innerHTML.replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;').replace(/"/g, '&quot;').replace(/'/g, '&#039;')
   })
   // hljs.highlightAll();
-  toggleTheme()
+  // toggleTheme()
 })
 
-function toggleTheme() {
-  const theme = document.documentElement.getAttribute('data-theme')
-  document.documentElement.setAttribute('data-theme', theme === 'light' ? 'dark' : 'light')
-}
+// function toggleTheme() {
+//   const theme = document.documentElement.getAttribute('data-theme')
+//   document.documentElement.setAttribute('data-theme', theme === 'light' ? 'dark' : 'light')
+// }
