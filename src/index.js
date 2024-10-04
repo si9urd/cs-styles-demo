@@ -1,4 +1,4 @@
-import 'cs-styles/css/cs-styles.min.css'
+import 'cs-styles/css/cs-styles.css'
 import './index.scss'
 
 document.addEventListener('DOMContentLoaded', function() {
