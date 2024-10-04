@@ -5,10 +5,13 @@
     <title>cs-styles demo</title>
 </head>
 <body>
-    <header>
+    <header class="container">
         <h1>CS-Styles</h1>
+        <div class="menu-icon" style="width: 60px;height: 60px;"></div>
+        <div class="dark-mode-icon" style="width: 60px;height: 60px;"></div>
+        <div class="light-mode-icon" style="width: 60px;height: 60px;"></div>
     </header>
-    <main>
+    <main class="container">
         <!-- Button -->
         <article>
             <div class="code">
@@ -29,5 +32,12 @@
             </section>
         </article>
     </main>
+
+    <script>
+      function toggleTheme () {
+        const theme = document.documentElement.getAttribute('data-theme')
+        document.documentElement.setAttribute('data-theme', theme === 'light' ? 'dark' : 'light')
+      }
+    </script>
 </body>
 </html>

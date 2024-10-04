@@ -1,0 +1,21 @@
+.grid {
+    & > div {
+        background-color: antiquewhite;
+        text-align: center;
+    }
+}
+
+.dark-mode-icon {
+    background-image: var(--cs-dark-icon);
+    background-size: 48px;
+}
+
+.light-mode-icon {
+    background-image: var(--cs-light-icon);
+    background-size: 48px;
+}
+
+.menu-icon {
+    background-image: var(--cs-menu-icon);
+    background-size: 48px;
+}

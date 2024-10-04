@@ -1,5 +1,5 @@
-import 'cs-styles/css/cs-styles.css'
-import './index.css'
+import 'cs-styles/css/cs-styles.min.css'
+import './index.scss'
 
 document.addEventListener('DOMContentLoaded', function() {
   document.querySelectorAll('.code').forEach(function(element) {
@@ -13,8 +13,8 @@ document.addEventListener('DOMContentLoaded', function() {
   // hljs.highlightAll();
   // toggleTheme()
 })
-
-// function toggleTheme() {
+//
+// function toggleTheme () {
 //   const theme = document.documentElement.getAttribute('data-theme')
 //   document.documentElement.setAttribute('data-theme', theme === 'light' ? 'dark' : 'light')
 // }
