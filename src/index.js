@@ -1,3 +1,5 @@
+import hljs from './highlight/highlight.js'
+import './highlight/styles/github-dark-dimmed.css'
 import 'cs-styles/css/cs-styles.css'
 import './index.scss'
 
@@ -10,7 +12,7 @@ document.addEventListener('DOMContentLoaded', function() {
   document.querySelectorAll('code').forEach(function(element) {
     element.innerHTML = element.innerHTML.replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;').replace(/"/g, '&quot;').replace(/'/g, '&#039;')
   })
-  // hljs.highlightAll();
+  hljs.highlightAll();
   // toggleTheme()
 })
 //
