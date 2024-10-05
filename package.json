@@ -2,7 +2,7 @@
   "name": "cs-styles-demo",
   "private": true,
   "type": "module",
-  "version": "0.0.6",
+  "version": "0.0.7",
   "scripts": {
     "build": "rsbuild build",
     "dev": "rsbuild dev --open",
@@ -10,7 +10,10 @@
     "preview": "rsbuild preview"
   },
   "dependencies": {
-    "cs-styles": "file:../cs-styles"
+    "cs-styles": "file:../cs-styles",
+    "html-format": "^1.1.7",
+    "pretty": "^2.0.0",
+    "simply-beautiful": "^1.0.1"
   },
   "devDependencies": {
     "@cs/standard": "^0.9.0",

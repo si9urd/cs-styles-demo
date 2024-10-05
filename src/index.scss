@@ -1,3 +1,11 @@
+article ~ article {
+    margin-top: var(--cs-space);
+}
+
+.hljs {
+    background-color: transparent !important;
+}
+
 .grid {
     & > div {
         background-color: antiquewhite;
@@ -20,6 +28,10 @@
 
 .menu-icon {
     background-image: var(--cs-menu-icon);
+}
+
+.github-icon {
+    background-image: var(--cs-github-icon);
 }
 
 .logo {
