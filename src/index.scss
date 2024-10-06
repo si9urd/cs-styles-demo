@@ -1,9 +1,13 @@
-article ~ article {
-    margin-top: var(--cs-space);
+.language-html {
+    margin-top: var(--cs-spacing);
+    border-radius: var(--cs-border-radius);
+    background-color: var(--cs-surface-container);
+    font-family: "Source Code Pro", monospace;
+    font-size: 13px;
 }
 
-.hljs {
-    background-color: transparent !important;
+article ~ article {
+    margin-top: var(--cs-spacing);
 }
 
 .grid {

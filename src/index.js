@@ -1,11 +1,12 @@
 import format from "html-format"
-import beautify from 'simply-beautiful'
 import pretty from 'pretty'
 import hljs from './highlight/highlight.js'
-import './highlight/styles/github-dark-dimmed.css'
+import './highlight/github.scss'
+import './highlight/github-dark-dimmed.scss'
 import 'cs-styles/css/cs-styles.css'
 import './index.scss'
 import { setDefaultTheme } from './prefers-theme.js'
+
 document.addEventListener('DOMContentLoaded', function() {
   setDefaultTheme()
   document.querySelectorAll('.code').forEach(function(element) {

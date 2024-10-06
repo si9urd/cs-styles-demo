@@ -3,6 +3,10 @@
 <head>
     <meta charset="UTF-8">
     <title>cs-styles demo</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Source+Code+Pro:ital,wght@0,200..900;1,200..900&display=swap"
+          rel="stylesheet">
 </head>
 <body>
 <header>
@@ -16,7 +20,7 @@
                 <li><a href="/examples">Examples</a></li>
                 <li><a href="/docs">Docs</a></li>
             </ul>
-            <hr />
+            <hr/>
             <ul>
                 <li>
                     <a href="https://github.com/si9urd/cs-styles" target="_blank" class="btn-icon">
@@ -32,9 +36,38 @@
         </nav>
     </div>
 </header>
+
 <main class="container">
     <article>
-        <div class="code">
+        <div class="code" hidden>
+            <header>
+                <div class="container">
+                    <a href="..." class="logo">
+                        <h2>CS-Styles</h2>
+                    </a>
+                    <nav>
+                        <ul>
+                            <li><a href="/examples">Examples</a></li>
+                            <li><a href="/docs">Docs</a></li>
+                        </ul>
+                        <hr/>
+                        <ul>
+                            <li>
+                                <a href="https://github.com/si9urd/cs-styles" target="_blank" class="btn-icon">
+                                    <svg>...</svg>
+                                </a>
+                            </li>
+                            <li>
+                                <button class="btn-icon toggle-mode-icon" onclick="toggleTheme()"></button>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+            </header>
+        </div>
+    </article>
+    <article>
+        <div class="code d-flex">
             <!-- Default button - button-filled primary -->
             <button>Default button</button>
             <!-- Button with aria-control attr -->
