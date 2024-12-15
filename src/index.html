@@ -41,7 +41,7 @@
       <h2>Default buttons</h2>
       <div class="code d-flex gap-3 py-3">
         <!-- Default button -->
-        <button>
+        <button aria-controls>
           <i>
             <svg width="800px" height="800px" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
               <path d="M4 12H20M12 4V20" stroke-width="2" stroke-linecap="round"
@@ -167,14 +167,28 @@
     </article>
 
     <article>
+      <h2>Inputs</h2>
       <div class="code">
         <form>
           <input type="text" name="text" placeholder="Text" aria-label="Text">
-          <input type="email" name="email" placeholder="Email" aria-label="Email" autocomplete="email">
+          <input disabled type="text" name="text" placeholder="Text" aria-label="Text">
+          <input type="email" name="email" placeholder="Email" aria-label="Email">
           <input type="number" name="number" placeholder="Number" aria-label="Number">
           <input type="password" name="password" placeholder="Password" aria-label="Password">
           <input type="tel" name="tel" placeholder="Tel" aria-label="Tel" autocomplete="tel">
           <input type="url" name="url" placeholder="Url" aria-label="Url">
+        </form>
+      </div>
+    </article>
+
+    <article>
+      <h2>DateTime Inputs</h2>
+      <div class="code">
+        <form>
+          <input type="date" name="date" aria-label="Date">
+          <input type="datetime-local" name="datetime-local" aria-label="Datetime local">
+          <input type="month" name="month" aria-label="Month">
+          <input type="time" name="time" aria-label="Time">
         </form>
       </div>
     </article>

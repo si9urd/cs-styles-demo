@@ -3,8 +3,10 @@ import hljs from './highlight/highlight.js'
 import './highlight/github.scss'
 import './highlight/github-dark-dimmed.scss'
 import 'cs-styles/css/cs-styles.css'
+// import bootstrap from 'bootstrap'
+// import 'bootstrap/dist/css/bootstrap.min.css'
 import './index.scss'
-import { setDefaultTheme } from './prefers-theme.js'
+import { setDefaultTheme } from './js/prefers-theme.js'
 
 document.addEventListener('DOMContentLoaded', function() {
   setDefaultTheme()
