@@ -2,7 +2,7 @@
   "name": "cs-styles-demo",
   "private": true,
   "type": "module",
-  "version": "0.7.11",
+  "version": "0.7.12",
   "scripts": {
     "build": "rsbuild build",
     "dev": "rsbuild dev --open",
