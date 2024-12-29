@@ -354,12 +354,10 @@
           <fieldset>
             <legend>Choose your favorite monster</legend>
 
-            <input type="radio" id="kraken" name="monster" value="K"/>
+            <input type="radio" id="kraken" name="monster" value="K" checked/>
             <label for="kraken">Kraken</label>
-            <br/>
             <input type="radio" id="sasquatch" name="monster" value="S"/>
             <label for="sasquatch">Sasquatch</label>
-            <br/>
             <input type="radio" id="mothman" name="monster" value="M"/>
             <label for="mothman">Mothman</label>
           </fieldset>
@@ -371,21 +369,60 @@
           <fieldset>
             <legend>Choose your favorite monster</legend>
             <label>
-              <input type="radio" name="monster" value="K"/>
+              <input type="radio" name="monster" value="K" checked/>
               Kraken
             </label>
 
-            <label>
+            <label class="mt-2">
               <input type="radio" name="monster" value="S"/>
               Sasquatch
             </label>
 
-            <label>
+            <label class="mt-2">
               <input type="radio" name="monster" value="M"/>
               Mothman
             </label>
           </fieldset>
         </form>
+      </div>
+    </article>
+
+    <article>
+      <h2>Checkbox</h2>
+      <div class="code">
+        <fieldset>
+          <legend>Select fruits:</legend>
+          <label>
+            <input type="checkbox" name="Apple" checked />
+            Apple
+          </label>
+          <label>
+            <input type="checkbox" name="Orange" checked />
+            Orange
+          </label>
+          <label>
+            <input type="checkbox" name="Mango" />
+            Mango
+          </label>
+          <label>
+            <input type="checkbox" name="Grape" />
+            Grape
+          </label>
+        </fieldset>
+      </div>
+
+      <div class="code mt-5">
+        <fieldset>
+          <legend>Select fruits:</legend>
+          <input type="checkbox" name="Apple" checked />
+          <label>Apple</label>
+          <input type="checkbox" name="Orange" checked />
+          <label>Orange</label>
+          <input type="checkbox" name="Mango" />
+          <label>Mango</label>
+          <input type="checkbox" name="Grape" />
+          <label>Grape</label>
+        </fieldset>
       </div>
     </article>
 
