@@ -356,7 +356,7 @@
 
             <input type="radio" id="kraken" name="monster" value="K" checked/>
             <label for="kraken">Kraken</label>
-            <input type="radio" id="sasquatch" name="monster" value="S"/>
+            <input type="radio" id="sasquatch" name="monster" value="S"  disabled/>
             <label for="sasquatch">Sasquatch</label>
             <input type="radio" id="mothman" name="monster" value="M"/>
             <label for="mothman">Mothman</label>
@@ -369,12 +369,12 @@
           <fieldset>
             <legend>Choose your favorite monster</legend>
             <label>
-              <input type="radio" name="monster" value="K" checked/>
+              <input type="radio" name="monster" value="K" checked  disabled/>
               Kraken
             </label>
 
             <label class="mt-2">
-              <input type="radio" name="monster" value="S"/>
+              <input type="radio" name="monster" value="S"  disabled/>
               Sasquatch
             </label>
 
@@ -390,14 +390,14 @@
     <article>
       <h2>Checkbox</h2>
       <div class="code">
-        <fieldset>
+        <fieldset class="v-stack">
           <legend>Select fruits:</legend>
           <label>
             <input type="checkbox" name="Apple" checked />
             Apple
           </label>
           <label>
-            <input type="checkbox" name="Orange" checked />
+            <input type="checkbox" name="Orange" checked disabled/>
             Orange
           </label>
           <label>
@@ -412,16 +412,40 @@
       </div>
 
       <div class="code mt-5">
-        <fieldset>
+        <fieldset class="h-stack">
           <legend>Select fruits:</legend>
           <input type="checkbox" name="Apple" checked />
           <label>Apple</label>
-          <input type="checkbox" name="Orange" checked />
+          <input type="checkbox" name="Orange" checked  disabled/>
           <label>Orange</label>
           <input type="checkbox" name="Mango" />
           <label>Mango</label>
           <input type="checkbox" name="Grape" />
           <label>Grape</label>
+        </fieldset>
+      </div>
+    </article>
+
+    <article>
+      <h2>Switches</h2>
+      <div class="code">
+        <fieldset>
+          <label>
+            <input name="terms" type="checkbox" role="switch" />
+            I agree to the Terms
+          </label>
+          <label class="mt-3">
+            <input name="opt-in" type="checkbox" role="switch" checked />
+            Receive news and offers
+          </label>
+        </fieldset>
+      </div>
+      <div class="code mt-5">
+        <fieldset>
+          <input name="terms" type="checkbox" role="switch" />
+          <label>I agree to the Terms</label>
+          <input name="opt-in" type="checkbox" role="switch" checked />
+          <label>Receive news and offers</label>
         </fieldset>
       </div>
     </article>
