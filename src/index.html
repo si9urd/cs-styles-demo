@@ -432,20 +432,32 @@
         <fieldset>
           <label>
             <input name="terms" type="checkbox" role="switch" />
-            I agree to the Terms
+            I agree
+          </label>
+          <label class="mt-3">
+            <input name="terms" type="checkbox" role="switch" disabled />
+            I agree
           </label>
           <label class="mt-3">
             <input name="opt-in" type="checkbox" role="switch" checked />
-            Receive news and offers
+            Subscribe
+          </label>
+          <label class="mt-3">
+            <input name="opt-in" type="checkbox" role="switch" checked disabled/>
+            Subscribe
           </label>
         </fieldset>
       </div>
       <div class="code mt-5">
         <fieldset>
           <input name="terms" type="checkbox" role="switch" />
-          <label>I agree to the Terms</label>
+          <label>I agree</label>
+          <input name="terms" type="checkbox" role="switch" disabled />
+          <label>I agree</label>
           <input name="opt-in" type="checkbox" role="switch" checked />
-          <label>Receive news and offers</label>
+          <label>Subscribe</label>
+          <input name="opt-in" type="checkbox" role="switch" checked disabled />
+          <label>Subscribe</label>
         </fieldset>
       </div>
     </article>
@@ -464,6 +476,25 @@
           <option>Pear</option>
         </select>
       </div>
+    </article>
+
+    <article>
+      <h2>Range</h2>
+      <div class="code v-stack gap-3">
+        <label>
+          Select range
+          <input type="range" value="0" />
+        </label>
+
+        <label>
+          Select range
+          <input type="range" value="25" />
+        </label>
+
+        <label>
+          Select range
+          <input type="range" value="40" disabled />
+        </label>
     </article>
 
     <!-- Grid -->
