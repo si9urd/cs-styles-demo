@@ -14,11 +14,10 @@
     <div class="content">
       <div class="logo">CS-Styles</div>
       <nav>
-        <ul>
-          <li><a href="/examples">Examples</a></li>
-          <li><a href="/docs">Docs</a></li>
-        </ul>
-        <hr/>
+        <!--        <ul>-->
+        <!--          <li><a href="/examples">Examples</a></li>-->
+        <!--          <li><a href="/docs">Docs</a></li>-->
+        <!--        </ul>-->
         <ul>
           <li>
             <a href="https://github.com/si9urd/cs-styles" target="_blank" class="btn-icon" role="button">
@@ -28,6 +27,7 @@
               </svg>
             </a>
           </li>
+          <hr/>
           <li>
             <button class="btn-icon toggle-mode-icon" onclick="toggleTheme()"></button>
           </li>
@@ -38,151 +38,60 @@
 
   <main>
     <article>
-      <h2>Default buttons</h2>
-      <div class="code d-flex gap-3 py-3">
-        <!-- Default button -->
-        <button aria-controls>
-          <i>
-            <svg width="800px" height="800px" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <path d="M4 12H20M12 4V20" stroke-width="2" stroke-linecap="round"
-                    stroke-linejoin="round"/>
-            </svg>
-          </i>
-          Default button
-        </button>
-        <!-- Disabled button -->
-        <button disabled>
-          <i>
-            <svg width="800px" height="800px" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <path d="M4 12H20M12 4V20" stroke-width="2" stroke-linecap="round"
-                    stroke-linejoin="round"/>
-            </svg>
-          </i>
-          Disabled
-        </button>
-        <!-- Hovered button -->
-        <button data-hovered>Hovered</button>
-        <!-- Focused button -->
-        <button data-focused>Focused</button>
-        <!-- Pressed button -->
-        <button data-pressed>Pressed</button>
-      </div>
-    </article>
+      <h2>Buttons</h2>
+      <div class="code v-stack gap-3 py-3">
+        <div class="h-stack gap-3">
+          <!-- Default button -->
+          <button aria-controls>
+            <i>
+              <svg width="800px" height="800px" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M4 12H20M12 4V20" stroke-width="2" stroke-linecap="round"
+                      stroke-linejoin="round"/>
+              </svg>
+            </i>
+            Default
+          </button>
+          <!-- Disabled button -->
+          <button disabled>
+            <i>
+              <svg width="800px" height="800px" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M4 12H20M12 4V20" stroke-width="2" stroke-linecap="round"
+                      stroke-linejoin="round"/>
+              </svg>
+            </i>
+            Disabled
+          </button>
+          <!-- Hovered button -->
+          <button data-hovered>Hovered</button>
+          <!-- Focused button -->
+          <button data-focused>Focused</button>
+          <!-- Pressed button -->
+          <button data-pressed>Pressed</button>
+        </div>
 
-    <article>
-      <h2>Elevated buttons</h2>
-      <div class="code d-flex gap-3 py-3">
-        <button class="btn-elevated">Elevated button</button>
-        <button disabled class="btn-elevated">Disabled</button>
-        <button data-hovered class="btn-elevated">Hovered</button>
-        <button data-focused class="btn-elevated">Focused</button>
-        <button data-pressed class="btn-elevated">Pressed</button>
-      </div>
-
-    </article>
-
-    <article>
-      <h2>Tonal buttons</h2>
-      <div class="code d-flex gap-3 py-3">
-        <button class="btn-tonal">Tonal button</button>
-        <button disabled class="btn-tonal">Disabled</button>
-        <button data-hovered class="btn-tonal">Hovered</button>
-        <button data-focused class="btn-tonal">Focused</button>
-        <button data-pressed class="btn-tonal">Pressed</button>
-      </div>
-    </article>
-
-    <article>
-      <h2>Outlined buttons</h2>
-      <div class="code d-flex gap-3 py-3">
-        <button class="btn-outlined">Outlined button</button>
-        <button disabled class="btn-outlined">Disabled</button>
-        <button data-hovered class="btn-outlined">Hovered</button>
-        <button data-focused class="btn-outlined">Focused</button>
-        <button data-pressed class="btn-outlined">Pressed</button>
-      </div>
-    </article>
-
-    <article>
-      <h2>Text buttons</h2>
-      <div class="code d-flex gap-3 py-3">
-        <!-- Default button -->
-        <button class="btn-text">
-          <i>
-            <svg width="800px" height="800px" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <path d="M4 12H20M12 4V20" stroke-width="2" stroke-linecap="round"
-                    stroke-linejoin="round"/>
-            </svg>
-          </i>
-          Text button
-        </button>
-        <!-- Disabled button -->
-        <button disabled class="btn-text">
-          <i>
-            <svg width="800px" height="800px" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <path d="M4 12H20M12 4V20" stroke-width="2" stroke-linecap="round"
-                    stroke-linejoin="round"/>
-            </svg>
-          </i>
-          Disabled
-        </button>
-        <!-- Hovered button -->
-        <button data-hovered class="btn-text">Hovered</button>
-        <!-- Focused button -->
-        <button data-focused class="btn-text">Focused</button>
-        <!-- Pressed button -->
-        <button data-pressed class="btn-text">Pressed</button>
-      </div>
-    </article>
-
-    <article>
-      <h2>FAB</h2>
-      <div class="code d-flex gap-3 py-3">
-        <!-- Default button -->
-        <button class="btn-fab">
-          <i>
-            <svg width="800px" height="800px" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <path d="M4 12H20M12 4V20" stroke-width="2" stroke-linecap="round"
-                    stroke-linejoin="round"/>
-            </svg>
-          </i>
-        </button>
-        <!-- Disabled button -->
-        <button disabled class="btn-fab">
-          <i>
-            <svg width="800px" height="800px" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <path d="M4 12H20M12 4V20" stroke-width="2" stroke-linecap="round"
-                    stroke-linejoin="round"/>
-            </svg>
-          </i>
-        </button>
-        <!-- Hovered button -->
-        <button data-hovered class="btn-fab">
-          <i>
-            <svg width="800px" height="800px" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <path d="M4 12H20M12 4V20" stroke-width="2" stroke-linecap="round"
-                    stroke-linejoin="round"/>
-            </svg>
-          </i>
-        </button>
-        <!-- Focused button -->
-        <button data-focused class="btn-fab">
-          <i>
-            <svg width="800px" height="800px" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <path d="M4 12H20M12 4V20" stroke-width="2" stroke-linecap="round"
-                    stroke-linejoin="round"/>
-            </svg>
-          </i>
-        </button>
-        <!-- Pressed button -->
-        <button data-pressed class="btn-fab">
-          <i>
-            <svg width="800px" height="800px" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <path d="M4 12H20M12 4V20" stroke-width="2" stroke-linecap="round"
-                    stroke-linejoin="round"/>
-            </svg>
-          </i>
-        </button>
+        <!-- Other buttons -->
+        <div class="h-stack gap-3">
+          <button class="btn-elevated">Elevated button</button>
+          <button class="btn-tonal">Tonal button</button>
+          <button class="btn-outlined">Outlined button</button>
+          <button class="btn-text">
+            <i>
+              <svg width="800px" height="800px" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M4 12H20M12 4V20" stroke-width="2" stroke-linecap="round"
+                      stroke-linejoin="round"/>
+              </svg>
+            </i>
+            Text button
+          </button>
+          <button class="btn-fab">
+            <i>
+              <svg width="800px" height="800px" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M4 12H20M12 4V20" stroke-width="2" stroke-linecap="round"
+                      stroke-linejoin="round"/>
+              </svg>
+            </i>
+          </button>
+        </div>
       </div>
     </article>
 
@@ -203,6 +112,7 @@
         <a data-pressed>Pressed</a>
       </div>
     </article>
+
     <article>
       <style>
         .box {
@@ -325,24 +235,24 @@
       <div class="code">
         <form>
           <fieldset role="group">
-            <input name="email" type="email" placeholder="Enter your email" autocomplete="email" />
-            <input type="submit" value="Subscribe" />
+            <input name="email" type="email" placeholder="Enter your email" autocomplete="email"/>
+            <input type="submit" value="Subscribe"/>
           </fieldset>
         </form>
       </div>
       <div class="code mt-5">
         <form>
           <fieldset role="group">
-            <input name="email" type="email" placeholder="Email" autocomplete="email" />
-            <input name="password" type="password" placeholder="Password" />
-            <input type="submit" value="Log in" />
+            <input name="email" type="email" placeholder="Email" autocomplete="email"/>
+            <input name="password" type="password" placeholder="Password"/>
+            <input type="submit" value="Log in"/>
           </fieldset>
         </form>
       </div>
       <div class="code mt-5">
         <form role="search">
-          <input name="search" type="search" placeholder="Search" />
-          <input type="submit" value="Search" />
+          <input name="search" type="search" placeholder="Search"/>
+          <input type="submit" value="Search"/>
         </form>
       </div>
     </article>
@@ -356,7 +266,7 @@
 
             <input type="radio" id="kraken" name="monster" value="K" checked/>
             <label for="kraken">Kraken</label>
-            <input type="radio" id="sasquatch" name="monster" value="S"  disabled/>
+            <input type="radio" id="sasquatch" name="monster" value="S" disabled/>
             <label for="sasquatch">Sasquatch</label>
             <input type="radio" id="mothman" name="monster" value="M"/>
             <label for="mothman">Mothman</label>
@@ -369,12 +279,12 @@
           <fieldset>
             <legend>Choose your favorite monster</legend>
             <label>
-              <input type="radio" name="monster" value="K" checked  disabled/>
+              <input type="radio" name="monster" value="K" checked disabled/>
               Kraken
             </label>
 
             <label class="mt-2">
-              <input type="radio" name="monster" value="S"  disabled/>
+              <input type="radio" name="monster" value="S" disabled/>
               Sasquatch
             </label>
 
@@ -393,7 +303,7 @@
         <fieldset class="v-stack">
           <legend>Select fruits:</legend>
           <label>
-            <input type="checkbox" name="Apple" checked />
+            <input type="checkbox" name="Apple" checked/>
             Apple
           </label>
           <label>
@@ -401,11 +311,11 @@
             Orange
           </label>
           <label>
-            <input type="checkbox" name="Mango" />
+            <input type="checkbox" name="Mango"/>
             Mango
           </label>
           <label>
-            <input type="checkbox" name="Grape" />
+            <input type="checkbox" name="Grape"/>
             Grape
           </label>
         </fieldset>
@@ -414,13 +324,13 @@
       <div class="code mt-5">
         <fieldset class="h-stack">
           <legend>Select fruits:</legend>
-          <input type="checkbox" name="Apple" checked />
+          <input type="checkbox" name="Apple" checked/>
           <label>Apple</label>
-          <input type="checkbox" name="Orange" checked  disabled/>
+          <input type="checkbox" name="Orange" checked disabled/>
           <label>Orange</label>
-          <input type="checkbox" name="Mango" />
+          <input type="checkbox" name="Mango"/>
           <label>Mango</label>
-          <input type="checkbox" name="Grape" />
+          <input type="checkbox" name="Grape"/>
           <label>Grape</label>
         </fieldset>
       </div>
@@ -431,15 +341,15 @@
       <div class="code">
         <fieldset>
           <label>
-            <input name="terms" type="checkbox" role="switch" />
+            <input name="terms" type="checkbox" role="switch"/>
             I agree
           </label>
           <label class="mt-3">
-            <input name="terms" type="checkbox" role="switch" disabled />
+            <input name="terms" type="checkbox" role="switch" disabled/>
             I agree
           </label>
           <label class="mt-3">
-            <input name="opt-in" type="checkbox" role="switch" checked />
+            <input name="opt-in" type="checkbox" role="switch" checked/>
             Subscribe
           </label>
           <label class="mt-3">
@@ -450,13 +360,13 @@
       </div>
       <div class="code mt-5">
         <fieldset>
-          <input name="terms" type="checkbox" role="switch" />
+          <input name="terms" type="checkbox" role="switch"/>
           <label>I agree</label>
-          <input name="terms" type="checkbox" role="switch" disabled />
+          <input name="terms" type="checkbox" role="switch" disabled/>
           <label>I agree</label>
-          <input name="opt-in" type="checkbox" role="switch" checked />
+          <input name="opt-in" type="checkbox" role="switch" checked/>
           <label>Subscribe</label>
-          <input name="opt-in" type="checkbox" role="switch" checked disabled />
+          <input name="opt-in" type="checkbox" role="switch" checked disabled/>
           <label>Subscribe</label>
         </fieldset>
       </div>
@@ -483,44 +393,40 @@
       <div class="code v-stack gap-3">
         <label>
           Select range
-          <input type="range" value="0" />
+          <input type="range" value="0"/>
         </label>
 
         <label>
           Select range
-          <input type="range" value="25" />
+          <input type="range" value="25"/>
         </label>
 
         <label>
           Select range
-          <input type="range" value="40" disabled />
+          <input type="range" value="40" disabled/>
         </label>
       </div>
     </article>
 
     <article>
       <h2>Loading</h2>
-      <div class="code">
+      <div class="code v-stack gap-3">
         <div aria-busy="true" style="padding: 50px 0;background-color: var(--cs-surface-container)"></div>
-        <br/>
         <span aria-busy="true" class="mt-3">Loading data...</span>
-        <br/>
-        <br/>
-        <button aria-busy="true">Loading...</button>
-        <button aria-busy="true" class="btn-elevated">Loading...</button>
-        <button aria-busy="true" class="btn-tonal">Loading...</button>
-        <button aria-busy="true" class="btn-outlined">Loading...</button>
-        <button aria-busy="true" class="btn-text">Loading...</button>
+        <div class="h-stack gap-3">
+          <button aria-busy="true">Loading...</button>
+          <button aria-busy="true" class="btn-elevated">Loading...</button>
+          <button aria-busy="true" class="btn-tonal">Loading...</button>
+          <button aria-busy="true" class="btn-outlined">Loading...</button>
+          <button aria-busy="true" class="btn-text">Loading...</button>
+        </div>
       </div>
     </article>
 
     <article>
       <h2>Progress</h2>
-      <div class="code">
+      <div class="code v-stack gap-3">
         <progress value="30" max="100"></progress>
-        <br/>
-        <br/>
-        <br/>
         <progress></progress>
       </div>
     </article>
@@ -543,7 +449,7 @@
 </div>
 
 <script>
-  function toggleTheme() {
+  function toggleTheme () {
     const theme = document.documentElement.getAttribute('data-theme')
     document.documentElement.setAttribute('data-theme', theme === 'light' ? 'dark' : 'light')
   }
