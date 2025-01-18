@@ -12,8 +12,14 @@ article ~ article {
 
 .grid {
     & > div {
-        background-color: antiquewhite;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: var(--cs-border-radius);
+        color: var(--cs-on-surface);
+        background-color: var(--cs-surface-container);
         text-align: center;
+        height: 64px;
     }
 }
 
