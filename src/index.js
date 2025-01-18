@@ -10,6 +10,17 @@ import { setDefaultTheme } from './js/prefers-theme.js'
 
 document.addEventListener('DOMContentLoaded', function() {
   setDefaultTheme()
+
+  document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+    anchor.addEventListener('click', function (e) {
+      e.preventDefault()
+
+      document.querySelector(this.getAttribute('href')).scrollIntoView({
+        behavior: 'smooth'
+      })
+    })
+  })
+
   document.querySelectorAll('.code').forEach(function(element) {
     const codeElement = document.createElement('div')
     codeElement.innerHTML = `<pre><code class="language-html">${pretty(element.innerHTML, { ocd: true })}</code></pre>`

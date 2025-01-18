@@ -6,8 +6,16 @@
     font-size: 13px;
 }
 
-article ~ article {
-    margin-top: var(--cs-spacing);
+.code {
+    overflow-x: auto;
+    padding-bottom: var(--cs-spacing);
+}
+
+h2[id] {
+    --anchor-offset: 100px;
+
+    padding-top: var(--anchor-offset);
+    margin-top: calc(-1 * var(--anchor-offset));
 }
 
 .grid {
