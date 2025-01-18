@@ -5,6 +5,7 @@ export default defineConfig({
   plugins: [pluginSass()],
   html: {
     template: './src/index.html',
-  }
+  },
+  assetPrefix: '/cs-styles-demo/',
 });
 
