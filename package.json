@@ -11,9 +11,7 @@
   },
   "dependencies": {
     "cs-styles": "file:../cs-styles",
-    "html-format": "^1.1.7",
-    "pretty": "^2.0.0",
-    "simply-beautiful": "^1.0.1"
+    "pretty": "^2.0.0"
   },
   "devDependencies": {
     "@eslint/js": "^9.11.0",
