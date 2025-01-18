@@ -495,10 +495,39 @@
           Select range
           <input type="range" value="40" disabled />
         </label>
+      </div>
+    </article>
+
+    <article>
+      <h2>Loading</h2>
+      <div class="code">
+        <div aria-busy="true" style="padding: 50px 0;background-color: var(--cs-surface-container)"></div>
+        <br/>
+        <span aria-busy="true" class="mt-3">Loading data...</span>
+        <br/>
+        <br/>
+        <button aria-busy="true">Loading...</button>
+        <button aria-busy="true" class="btn-elevated">Loading...</button>
+        <button aria-busy="true" class="btn-tonal">Loading...</button>
+        <button aria-busy="true" class="btn-outlined">Loading...</button>
+        <button aria-busy="true" class="btn-text">Loading...</button>
+      </div>
+    </article>
+
+    <article>
+      <h2>Progress</h2>
+      <div class="code">
+        <progress value="30" max="100"></progress>
+        <br/>
+        <br/>
+        <br/>
+        <progress></progress>
+      </div>
     </article>
 
     <!-- Grid -->
     <article>
+      <h2>Grid</h2>
       <section class="container">
         <div class="grid">
           <div class="g-col-1">Item 1</div>
