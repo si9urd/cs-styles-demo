@@ -2,7 +2,7 @@ import pretty from 'pretty'
 import hljs from './highlight/highlight.js'
 import './highlight/github.scss'
 import './highlight/github-dark-dimmed.scss'
-import 'cs-styles/dist/cs-styles.css'
+// import 'cs-styles/dist/cs-styles.css'
 import './index.scss'
 import { setDefaultTheme } from './js/prefers-theme.js'
 

@@ -1,3 +1,22 @@
+@use "cs-styles";
+//@use "cs-styles/scss/index" with (
+//  $page-root: "#root",
+//  $enable-icons: true,
+//  $enable-grid: true,
+//  $grid-breakpoints: (
+//        xs: 0,
+//        sm: 576px,
+//        md: 768px,
+//        lg: 992px,
+//        xl: 1100px,
+//        xxl: 1400px
+//  ),
+//  $theme-colors: (
+//    //'light-primary': red,
+//    //'dark-primary': green
+//  )
+//);
+
 .language-html {
     margin-top: var(--cs-spacing);
     border-radius: var(--cs-border-radius);
