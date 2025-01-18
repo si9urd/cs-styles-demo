@@ -1,4 +1,4 @@
-# Rsbuild Project
+# CS-Styles demo
 
 ## Setup
 
