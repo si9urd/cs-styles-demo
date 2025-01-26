@@ -11,7 +11,7 @@ CS-Styles v0.7.24 (https://github.com/si9urd/cs-styles)
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Source+Code+Pro:ital,wght@0,200..900;1,200..900&display=swap"
         rel="stylesheet">
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/si9urd/cs-styles@0.7.26/dist/cs-styles.min.css">
+  <!--  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/si9urd/cs-styles@0.7.26/dist/cs-styles.min.css">-->
 </head>
 <body>
 <div id="root">
@@ -50,12 +50,13 @@ CS-Styles v0.7.24 (https://github.com/si9urd/cs-styles)
           <li><a href="#buttons">Buttons</a></li>
           <li><a href="#links">Links</a></li>
           <li><a href="#elevation">Elevation</a></li>
+          <li><a href="#heading">Heading</a></li>
           <li><a href="#inputs">Inputs</a></li>
-<!--          <li><a href="#date-inputs">DateTime Inputs</a></li>-->
-<!--          <li><a href="#states">Validation states</a></li>-->
-<!--          <li><a href="#search-input">Search input</a></li>-->
-<!--          <li><a href="#other-inputs">Other inputs</a></li>-->
-<!--          <li><a href="#text-area">Text area</a></li>-->
+          <!--          <li><a href="#date-inputs">DateTime Inputs</a></li>-->
+          <!--          <li><a href="#states">Validation states</a></li>-->
+          <!--          <li><a href="#search-input">Search input</a></li>-->
+          <!--          <li><a href="#other-inputs">Other inputs</a></li>-->
+          <!--          <li><a href="#text-area">Text area</a></li>-->
           <li><a href="#group">Group</a></li>
           <li><a href="#radio">Radio button</a></li>
           <li><a href="#checkbox">Checkbox</a></li>
@@ -65,6 +66,7 @@ CS-Styles v0.7.24 (https://github.com/si9urd/cs-styles)
           <li><a href="#loading">Loading</a></li>
           <li><a href="#progress">Progress</a></li>
           <li><a href="#grid">Grid</a></li>
+          <li><a href="#color-theme">Colors scheme</a></li>
         </ul>
       </nav>
     </aside>
@@ -169,7 +171,7 @@ CS-Styles v0.7.24 (https://github.com/si9urd/cs-styles)
         </div>
       </article>
 
-      <article>
+      <article id="heading">
         <div class="code">
           <h1>Heading 1</h1>
           <h2>Heading 2</h2>
@@ -483,6 +485,13 @@ CS-Styles v0.7.24 (https://github.com/si9urd/cs-styles)
             <div class="g-start-5 g-col-4" style="grid-row: 2">g-start-5 g-col-4</div>
             <div class="g-start-9 g-col-4" style="grid-row: 3">g-start-9 g-col-4</div>
           </div>
+        </div>
+      </article>
+
+      <article id="color-theme">
+        <h2>Color scheme</h2>
+        <div class="wrapper code p-3" style="background-color: var(--cs-surface-container); border-radius: 16px;">
+          <div class="grid color-scheme"></div>
         </div>
       </article>
     </div>
