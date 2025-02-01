@@ -10,7 +10,6 @@
     "preview": "rsbuild preview"
   },
   "dependencies": {
-    "cs-styles": "file: ../cs-styles",
     "pretty": "^2.0.0"
   },
   "devDependencies": {
