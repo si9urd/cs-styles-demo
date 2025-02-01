@@ -1,5 +1,5 @@
 <!--
-CS-Styles v0.7.24 (https://github.com/si9urd/cs-styles)
+CS-Styles v0.7.29 (https://github.com/si9urd/cs-styles)
 © 2024-2025 Oleh Obydenov - Licensed under MIT
 -->
 <!DOCTYPE html>
@@ -11,21 +11,14 @@ CS-Styles v0.7.24 (https://github.com/si9urd/cs-styles)
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Source+Code+Pro:ital,wght@0,200..900;1,200..900&display=swap"
         rel="stylesheet">
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/si9urd/cs-styles@0.7.26/dist/cs-styles.min.css">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <script defer src="static/js/448.81300d5b.js"></script>
-  <script defer src="static/js/index.f3149c13.js"></script>
-  <link href="static/css/index.ca1f080a.css" rel="stylesheet"></head>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/si9urd/cs-styles@0.7.29/dist/cs-styles.min.css">
+<meta name="viewport" content="width=device-width, initial-scale=1.0"><script defer src="/static/js/448.81300d5b.js"></script><script defer src="/static/js/index.7372a96f.js"></script><link href="/static/css/index.f924f802.css" rel="stylesheet"></head>
 <body>
 <div id="root">
-  <header>
-    <div class="content">
-      <div class="logo">CS-Styles</div>
+  <header class="sticky" style="box-shadow: var(--cs-elevation-1)">
+    <div class="container content">
+      <div class="cs-logo">CS-Styles</div>
       <nav>
-        <!--        <ul>-->
-        <!--          <li><a href="/examples">Examples</a></li>-->
-        <!--          <li><a href="/docs">Docs</a></li>-->
-        <!--        </ul>-->
         <ul>
           <li>
             <!-- link as button example -->
@@ -38,7 +31,7 @@ CS-Styles v0.7.24 (https://github.com/si9urd/cs-styles)
           </li>
           <hr/>
           <li>
-            <button aria-controls class="btn-icon toggle-mode-icon" onclick="toggleTheme()"></button>
+            <button aria-controls data-theme-toggle class="btn-icon" onclick="toggleTheme()"></button>
           </li>
         </ul>
       </nav>
@@ -46,448 +39,459 @@ CS-Styles v0.7.24 (https://github.com/si9urd/cs-styles)
   </header>
 
   <main>
-    <aside>
-      <h4>Elements</h4>
-      <nav>
-        <ul>
-          <li><a href="#buttons">Buttons</a></li>
-          <li><a href="#links">Links</a></li>
-          <li><a href="#elevation">Elevation</a></li>
-          <li><a href="#inputs">Inputs</a></li>
-<!--          <li><a href="#date-inputs">DateTime Inputs</a></li>-->
-<!--          <li><a href="#states">Validation states</a></li>-->
-<!--          <li><a href="#search-input">Search input</a></li>-->
-<!--          <li><a href="#other-inputs">Other inputs</a></li>-->
-<!--          <li><a href="#text-area">Text area</a></li>-->
-          <li><a href="#group">Group</a></li>
-          <li><a href="#radio">Radio button</a></li>
-          <li><a href="#checkbox">Checkbox</a></li>
-          <li><a href="#switch">Switches</a></li>
-          <li><a href="#select">Select</a></li>
-          <li><a href="#range">Range</a></li>
-          <li><a href="#loading">Loading</a></li>
-          <li><a href="#progress">Progress</a></li>
-          <li><a href="#grid">Grid</a></li>
-        </ul>
-      </nav>
-    </aside>
-    <div class="content v-stack gap-5">
-      <article>
-        <h2 id="buttons">Buttons</h2>
-        <div class="code v-stack gap-3 py-3">
-          <div class="h-stack gap-3">
-            <!-- Default button -->
-            <button aria-controls>
-              <i>
-                <svg width="24" height="24" viewBox="0 0 24 24" stroke="currentColor" fill="none"
-                     xmlns="http://www.w3.org/2000/svg">
-                  <path d="M4 12H20M12 4V20" stroke-width="2" stroke-linecap="round"
-                        stroke-linejoin="round"/>
-                </svg>
-              </i>
-              Default
-            </button>
-            <!-- Disabled button -->
-            <button disabled>
-              <i>
-                <svg width="24" height="24" viewBox="0 0 24 24" stroke="currentColor" fill="none"
-                     xmlns="http://www.w3.org/2000/svg">
-                  <path d="M4 12H20M12 4V20" stroke-width="2" stroke-linecap="round"
-                        stroke-linejoin="round"/>
-                </svg>
-              </i>
-              Disabled
-            </button>
-            <!-- Hovered button -->
-            <button data-hovered>Hovered</button>
-            <!-- Focused button -->
-            <button data-focused>Focused</button>
-            <!-- Pressed button -->
-            <button data-pressed>Pressed</button>
-          </div>
+    <div class="container">
+      <aside>
+        <h4>Elements</h4>
+        <nav>
+          <ul>
+            <li><a href="#buttons">Buttons</a></li>
+            <li><a href="#links">Links</a></li>
+            <li><a href="#elevation">Elevation</a></li>
+            <li><a href="#heading">Heading</a></li>
+            <li><a href="#inputs">Inputs</a></li>
+            <!--          <li><a href="#date-inputs">DateTime Inputs</a></li>-->
+            <!--          <li><a href="#states">Validation states</a></li>-->
+            <!--          <li><a href="#search-input">Search input</a></li>-->
+            <!--          <li><a href="#other-inputs">Other inputs</a></li>-->
+            <!--          <li><a href="#text-area">Text area</a></li>-->
+            <li><a href="#group">Group</a></li>
+            <li><a href="#radio">Radio button</a></li>
+            <li><a href="#checkbox">Checkbox</a></li>
+            <li><a href="#switch">Switches</a></li>
+            <li><a href="#select">Select</a></li>
+            <li><a href="#range">Range</a></li>
+            <li><a href="#loading">Loading</a></li>
+            <li><a href="#progress">Progress</a></li>
+            <li><a href="#grid">Grid</a></li>
+            <li><a href="#color-theme">Colors scheme</a></li>
+          </ul>
+        </nav>
+      </aside>
+      <div class="content v-stack gap-5">
+        <article>
+          <h2 id="buttons">Buttons</h2>
+          <div class="code v-stack gap-3 py-3">
+            <div class="h-stack gap-3">
+              <!-- Default button -->
+              <button aria-controls>
+                <i>
+                  <svg width="24" height="24" viewBox="0 0 24 24" stroke="currentColor" fill="none"
+                       xmlns="http://www.w3.org/2000/svg">
+                    <path d="M4 12H20M12 4V20" stroke-width="2" stroke-linecap="round"
+                          stroke-linejoin="round"/>
+                  </svg>
+                </i>
+                Default
+              </button>
+              <!-- Disabled button -->
+              <button disabled>
+                <i>
+                  <svg width="24" height="24" viewBox="0 0 24 24" stroke="currentColor" fill="none"
+                       xmlns="http://www.w3.org/2000/svg">
+                    <path d="M4 12H20M12 4V20" stroke-width="2" stroke-linecap="round"
+                          stroke-linejoin="round"/>
+                  </svg>
+                </i>
+                Disabled
+              </button>
+              <!-- Hovered button -->
+              <button data-hovered>Hovered</button>
+              <!-- Focused button -->
+              <button data-focused>Focused</button>
+              <!-- Pressed button -->
+              <button data-pressed>Pressed</button>
+            </div>
 
-          <!-- Other buttons -->
-          <div class="h-stack gap-3">
-            <button class="btn-elevated">Elevated button</button>
-            <button class="btn-tonal">Tonal button</button>
-            <button class="btn-outlined">Outlined button</button>
-            <button class="btn-text">
-              <i>
-                <svg width="24" height="24" viewBox="0 0 24 24" stroke="currentColor" fill="none"
-                     xmlns="http://www.w3.org/2000/svg">
-                  <path d="M4 12H20M12 4V20" stroke-width="2" stroke-linecap="round"
-                        stroke-linejoin="round"/>
-                </svg>
-              </i>
-              Text button
-            </button>
-            <button class="btn-fab">
-              <i>
-                <svg width="24" height="24" viewBox="0 0 24 24" stroke="currentColor" fill="none"
-                     xmlns="http://www.w3.org/2000/svg">
-                  <path d="M4 12H20M12 4V20" stroke-width="2" stroke-linecap="round"
-                        stroke-linejoin="round"/>
-                </svg>
-              </i>
-            </button>
+            <!-- Other buttons -->
+            <div class="h-stack gap-3">
+              <button class="btn-elevated">Elevated button</button>
+              <button class="btn-tonal">Tonal button</button>
+              <button class="btn-outlined">Outlined button</button>
+              <button class="btn-text">
+                <i>
+                  <svg width="24" height="24" viewBox="0 0 24 24" stroke="currentColor" fill="none"
+                       xmlns="http://www.w3.org/2000/svg">
+                    <path d="M4 12H20M12 4V20" stroke-width="2" stroke-linecap="round"
+                          stroke-linejoin="round"/>
+                  </svg>
+                </i>
+                Text button
+              </button>
+              <button class="btn-fab">
+                <i>
+                  <svg width="24" height="24" viewBox="0 0 24 24" stroke="currentColor" fill="none"
+                       xmlns="http://www.w3.org/2000/svg">
+                    <path d="M4 12H20M12 4V20" stroke-width="2" stroke-linecap="round"
+                          stroke-linejoin="round"/>
+                  </svg>
+                </i>
+              </button>
+            </div>
           </div>
-        </div>
-      </article>
+        </article>
 
-      <article>
-        <h2 id="links">Links</h2>
-        <div class="code d-flex gap-3 py-3">
-          <!-- Default link -->
-          <a>
-            Default link
-          </a>
-          <!-- Disabled link -->
-          <span role=link disabled class="btn-text">
+        <article>
+          <h2 id="links">Links</h2>
+          <div class="code d-flex gap-3 py-3">
+            <!-- Default link -->
+            <a>
+              Default link
+            </a>
+            <!-- Disabled link -->
+            <span role=link disabled class="btn-text">
           Disabled link
         </span>
 
-          <a data-hovered>Hovered</a>
-          <a data-focused>Focused</a>
-          <a data-pressed>Pressed</a>
-        </div>
-      </article>
+            <a data-hovered>Hovered</a>
+            <a data-focused>Focused</a>
+            <a data-pressed>Pressed</a>
+          </div>
+        </article>
 
-      <article>
-        <style>
-          .box {
-            width: 15%;
-            aspect-ratio: 1;
-            border-radius: var(--cs-border-radius);
-            background-color: var(--cs-surface-container);
-          }
-        </style>
-        <h2 id="elevation">Elevation</h2>
-        <div class="code d-flex py-3 pe-3" style="gap: 2%">
-          <div class="box" style="box-shadow: var(--cs-elevation-0)"></div>
-          <div class="box" style="box-shadow: var(--cs-elevation-1)"></div>
-          <div class="box" style="box-shadow: var(--cs-elevation-2)"></div>
-          <div class="box" style="box-shadow: var(--cs-elevation-3)"></div>
-          <div class="box" style="box-shadow: var(--cs-elevation-4)"></div>
-          <div class="box" style="box-shadow: var(--cs-elevation-5)"></div>
-        </div>
-      </article>
+        <article>
+          <style>
+            .box {
+              width: 15%;
+              aspect-ratio: 1;
+              border-radius: var(--cs-border-radius);
+              background-color: var(--cs-surface-container);
+            }
+          </style>
+          <h2 id="elevation">Elevation</h2>
+          <div class="code d-flex py-3 pe-3" style="gap: 2%">
+            <div class="box" style="box-shadow: var(--cs-elevation-0)"></div>
+            <div class="box" style="box-shadow: var(--cs-elevation-1)"></div>
+            <div class="box" style="box-shadow: var(--cs-elevation-2)"></div>
+            <div class="box" style="box-shadow: var(--cs-elevation-3)"></div>
+            <div class="box" style="box-shadow: var(--cs-elevation-4)"></div>
+            <div class="box" style="box-shadow: var(--cs-elevation-5)"></div>
+          </div>
+        </article>
 
-      <article>
-        <div class="code">
-          <h1>Heading 1</h1>
-          <h2>Heading 2</h2>
-          <h3>Heading 3</h3>
-          <h4>Heading 4</h4>
-          <h5>Heading 5</h5>
-          <h6>Heading 6</h6>
-        </div>
-      </article>
+        <article id="heading">
+          <div class="code">
+            <h1>Heading 1</h1>
+            <h2>Heading 2</h2>
+            <h3>Heading 3</h3>
+            <h4>Heading 4</h4>
+            <h5>Heading 5</h5>
+            <h6>Heading 6</h6>
+          </div>
+        </article>
 
-      <article>
-        <h2 id="inputs">Inputs</h2>
-        <div class="code">
-          <form>
-            <input type="text" name="text" placeholder="Text" aria-label="Text">
-            <input disabled type="text" name="text" placeholder="Text" aria-label="Text">
-            <input type="email" name="email" placeholder="Email" aria-label="Email">
-            <input type="number" name="number" placeholder="Number" aria-label="Number">
-            <input type="password" name="password" placeholder="Password" aria-label="Password">
-            <input type="tel" name="tel" placeholder="Tel" aria-label="Tel" autocomplete="tel">
-            <input type="url" name="url" placeholder="Url" aria-label="Url">
-          </form>
-        </div>
-      </article>
+        <article>
+          <h2 id="inputs">Inputs</h2>
+          <div class="code">
+            <form>
+              <input type="text" name="text" placeholder="Text" aria-label="Text">
+              <input disabled type="text" name="text" placeholder="Text" aria-label="Text">
+              <input type="email" name="email" placeholder="Email" aria-label="Email">
+              <input type="number" name="number" placeholder="Number" aria-label="Number">
+              <input type="password" name="password" placeholder="Password" aria-label="Password">
+              <input type="tel" name="tel" placeholder="Tel" aria-label="Tel" autocomplete="tel">
+              <input type="url" name="url" placeholder="Url" aria-label="Url">
+            </form>
+          </div>
+        </article>
 
-      <article>
-        <h2 id="date-inputs">DateTime Inputs</h2>
-        <div class="code">
-          <form>
-            <input type="date" name="date" aria-label="Date">
-            <input type="datetime-local" name="datetime-local" aria-label="Datetime local">
-            <input type="month" name="month" aria-label="Month">
-            <input type="time" name="time" aria-label="Time">
-          </form>
-        </div>
-      </article>
+        <article>
+          <h2 id="date-inputs">DateTime Inputs</h2>
+          <div class="code">
+            <form>
+              <input type="date" name="date" aria-label="Date">
+              <input type="datetime-local" name="datetime-local" aria-label="Datetime local">
+              <input type="month" name="month" aria-label="Month">
+              <input type="time" name="time" aria-label="Time">
+            </form>
+          </div>
+        </article>
 
-      <article>
-        <h2 id="states">Validation states</h2>
-        <div class="code">
-          <form>
-            <input
-                type="text"
-                name="valid"
-                value="Valid"
-                aria-invalid="false"
-            >
-            <input
-                type="text"
-                name="invalid"
-                value="Invalid"
-                aria-invalid="true"
-            >
-          </form>
-        </div>
-      </article>
+        <article>
+          <h2 id="states">Validation states</h2>
+          <div class="code">
+            <form>
+              <input
+                  type="text"
+                  name="valid"
+                  value="Valid"
+                  aria-invalid="false"
+              >
+              <input
+                  type="text"
+                  name="invalid"
+                  value="Invalid"
+                  aria-invalid="true"
+              >
+            </form>
+          </div>
+        </article>
 
-      <article>
-        <h2 id="search-input">Search input</h2>
-        <div class="code">
-          <form>
-            <input
-                type="search"
-                name="search"
-                placeholder="Search"
-                aria-label="Search"
-            />
-          </form>
-        </div>
-      </article>
+        <article>
+          <h2 id="search-input">Search input</h2>
+          <div class="code">
+            <form>
+              <input
+                  type="search"
+                  name="search"
+                  placeholder="Search"
+                  aria-label="Search"
+              />
+            </form>
+          </div>
+        </article>
 
-      <article>
-        <h2 id="other-inputs">Other inputs</h2>
-        <div class="code">
-          <form>
-            <input
-                type="color"
-                value="#ff9500"
-                aria-label="Color picker"
-            >
-            <input type="file">
-          </form>
-        </div>
-      </article>
+        <article>
+          <h2 id="other-inputs">Other inputs</h2>
+          <div class="code">
+            <form>
+              <input
+                  type="color"
+                  value="#ff9500"
+                  aria-label="Color picker"
+              >
+              <input type="file">
+            </form>
+          </div>
+        </article>
 
-      <article>
-        <h2 id="text-area">Text area</h2>
-        <div class="code">
-          <form>
-            <textarea placeholder="Textarea" aria-label="Textarea"></textarea>
-            <textarea name="valid" aria-invalid="false" aria-label="Valid textarea">Valid textarea</textarea>
-            <textarea name="invalid" aria-invalid="true" aria-label="Invalid textarea">Invalid textarea</textarea>
-          </form>
-        </div>
-      </article>
+        <article>
+          <h2 id="text-area">Text area</h2>
+          <div class="code">
+            <form>
+              <textarea placeholder="Textarea" aria-label="Textarea"></textarea>
+              <textarea name="valid" aria-invalid="false" aria-label="Valid textarea">Valid textarea</textarea>
+              <textarea name="invalid" aria-invalid="true" aria-label="Invalid textarea">Invalid textarea</textarea>
+            </form>
+          </div>
+        </article>
 
-      <article>
-        <h2 id="group">Group</h2>
-        <div class="code">
-          <form>
-            <fieldset role="group">
-              <input name="email" type="email" placeholder="Enter your email" autocomplete="email"/>
-              <input type="submit" value="Subscribe"/>
-            </fieldset>
-          </form>
-        </div>
-        <div class="code mt-5">
-          <form>
-            <fieldset role="group">
-              <input name="email" type="email" placeholder="Email" autocomplete="email"/>
-              <input name="password" type="password" placeholder="Password"/>
-              <input type="submit" value="Log in"/>
-            </fieldset>
-          </form>
-        </div>
-        <div class="code mt-5">
-          <form role="search">
-            <input name="search" type="search" placeholder="Search"/>
-            <input type="submit" value="Search"/>
-          </form>
-        </div>
-      </article>
+        <article>
+          <h2 id="group">Group</h2>
+          <div class="code">
+            <form>
+              <fieldset role="group">
+                <input name="email" type="email" placeholder="Enter your email" autocomplete="email"/>
+                <input type="submit" value="Subscribe"/>
+              </fieldset>
+            </form>
+          </div>
+          <div class="code mt-5">
+            <form>
+              <fieldset role="group">
+                <input name="email" type="email" placeholder="Email" autocomplete="email"/>
+                <input name="password" type="password" placeholder="Password"/>
+                <input type="submit" value="Log in"/>
+              </fieldset>
+            </form>
+          </div>
+          <div class="code mt-5">
+            <form role="search">
+              <input name="search" type="search" placeholder="Search"/>
+              <input type="submit" value="Search"/>
+            </form>
+          </div>
+        </article>
 
-      <article>
-        <h2 id="radio">Radio button</h2>
-        <div class="code">
-          <form>
-            <fieldset>
-              <legend>Choose your favorite monster</legend>
+        <article>
+          <h2 id="radio">Radio button</h2>
+          <div class="code">
+            <form>
+              <fieldset>
+                <legend>Choose your favorite monster</legend>
 
-              <input type="radio" id="kraken" name="monster" value="K" checked/>
-              <label for="kraken">Kraken</label>
-              <input type="radio" id="sasquatch" name="monster" value="S" disabled/>
-              <label for="sasquatch">Sasquatch</label>
-              <input type="radio" id="mothman" name="monster" value="M"/>
-              <label for="mothman">Mothman</label>
-            </fieldset>
-          </form>
-        </div>
+                <input type="radio" id="kraken" name="monster" value="K" checked/>
+                <label for="kraken">Kraken</label>
+                <input type="radio" id="sasquatch" name="monster" value="S" disabled/>
+                <label for="sasquatch">Sasquatch</label>
+                <input type="radio" id="mothman" name="monster" value="M"/>
+                <label for="mothman">Mothman</label>
+              </fieldset>
+            </form>
+          </div>
 
-        <div class="code mt-5">
-          <form>
-            <fieldset>
-              <legend>Choose your favorite monster</legend>
+          <div class="code mt-5">
+            <form>
+              <fieldset>
+                <legend>Choose your favorite monster</legend>
+                <label>
+                  <input type="radio" name="monster" value="K" checked disabled/>
+                  Kraken
+                </label>
+
+                <label class="mt-2">
+                  <input type="radio" name="monster" value="S" disabled/>
+                  Sasquatch
+                </label>
+
+                <label class="mt-2">
+                  <input type="radio" name="monster" value="M"/>
+                  Mothman
+                </label>
+              </fieldset>
+            </form>
+          </div>
+        </article>
+
+        <article>
+          <h2 id="checkbox">Checkbox</h2>
+          <div class="code">
+            <fieldset class="v-stack">
+              <legend>Select fruits:</legend>
               <label>
-                <input type="radio" name="monster" value="K" checked disabled/>
-                Kraken
+                <input type="checkbox" name="Apple" checked/>
+                Apple
               </label>
-
-              <label class="mt-2">
-                <input type="radio" name="monster" value="S" disabled/>
-                Sasquatch
+              <label>
+                <input type="checkbox" name="Orange" checked disabled/>
+                Orange
               </label>
-
-              <label class="mt-2">
-                <input type="radio" name="monster" value="M"/>
-                Mothman
+              <label>
+                <input type="checkbox" name="Mango"/>
+                Mango
+              </label>
+              <label>
+                <input type="checkbox" name="Grape"/>
+                Grape
               </label>
             </fieldset>
-          </form>
-        </div>
-      </article>
+          </div>
 
-      <article>
-        <h2 id="checkbox">Checkbox</h2>
-        <div class="code">
-          <fieldset class="v-stack">
-            <legend>Select fruits:</legend>
-            <label>
+          <div class="code mt-5">
+            <fieldset class="h-stack">
+              <legend>Select fruits:</legend>
               <input type="checkbox" name="Apple" checked/>
-              Apple
-            </label>
-            <label>
+              <label>Apple</label>
               <input type="checkbox" name="Orange" checked disabled/>
-              Orange
-            </label>
-            <label>
+              <label>Orange</label>
               <input type="checkbox" name="Mango"/>
-              Mango
-            </label>
-            <label>
+              <label>Mango</label>
               <input type="checkbox" name="Grape"/>
-              Grape
-            </label>
-          </fieldset>
-        </div>
+              <label>Grape</label>
+            </fieldset>
+          </div>
+        </article>
 
-        <div class="code mt-5">
-          <fieldset class="h-stack">
-            <legend>Select fruits:</legend>
-            <input type="checkbox" name="Apple" checked/>
-            <label>Apple</label>
-            <input type="checkbox" name="Orange" checked disabled/>
-            <label>Orange</label>
-            <input type="checkbox" name="Mango"/>
-            <label>Mango</label>
-            <input type="checkbox" name="Grape"/>
-            <label>Grape</label>
-          </fieldset>
-        </div>
-      </article>
-
-      <article>
-        <h2 id="switch">Switches</h2>
-        <div class="code">
-          <fieldset>
-            <label>
+        <article>
+          <h2 id="switch">Switches</h2>
+          <div class="code">
+            <fieldset>
+              <label>
+                <input name="terms" type="checkbox" role="switch"/>
+                I agree
+              </label>
+              <label class="mt-3">
+                <input name="terms" type="checkbox" role="switch" disabled/>
+                I agree
+              </label>
+              <label class="mt-3">
+                <input name="opt-in" type="checkbox" role="switch" checked/>
+                Subscribe
+              </label>
+              <label class="mt-3">
+                <input name="opt-in" type="checkbox" role="switch" checked disabled/>
+                Subscribe
+              </label>
+            </fieldset>
+          </div>
+          <div class="code mt-5">
+            <fieldset>
               <input name="terms" type="checkbox" role="switch"/>
-              I agree
-            </label>
-            <label class="mt-3">
+              <label>I agree</label>
               <input name="terms" type="checkbox" role="switch" disabled/>
-              I agree
-            </label>
-            <label class="mt-3">
+              <label>I agree</label>
               <input name="opt-in" type="checkbox" role="switch" checked/>
-              Subscribe
-            </label>
-            <label class="mt-3">
+              <label>Subscribe</label>
               <input name="opt-in" type="checkbox" role="switch" checked disabled/>
-              Subscribe
+              <label>Subscribe</label>
+            </fieldset>
+          </div>
+        </article>
+
+        <article>
+          <h2 id="select">Select</h2>
+          <div class="code">
+            <select name="fruits" aria-label="Select fruit...">
+              <option selected disabled value="">
+                Select fruit...
+              </option>
+              <option>Apple</option>
+              <option>Orange</option>
+              <option>Papaya</option>
+              <option>Grape</option>
+              <option>Pear</option>
+            </select>
+          </div>
+        </article>
+
+        <article>
+          <h2 id="range">Range</h2>
+          <div class="code v-stack gap-3">
+            <label>
+              Select range
+              <input type="range" value="0"/>
             </label>
-          </fieldset>
-        </div>
-        <div class="code mt-5">
-          <fieldset>
-            <input name="terms" type="checkbox" role="switch"/>
-            <label>I agree</label>
-            <input name="terms" type="checkbox" role="switch" disabled/>
-            <label>I agree</label>
-            <input name="opt-in" type="checkbox" role="switch" checked/>
-            <label>Subscribe</label>
-            <input name="opt-in" type="checkbox" role="switch" checked disabled/>
-            <label>Subscribe</label>
-          </fieldset>
-        </div>
-      </article>
 
-      <article>
-        <h2 id="select">Select</h2>
-        <div class="code">
-          <select name="fruits" aria-label="Select fruit...">
-            <option selected disabled value="">
-              Select fruit...
-            </option>
-            <option>Apple</option>
-            <option>Orange</option>
-            <option>Papaya</option>
-            <option>Grape</option>
-            <option>Pear</option>
-          </select>
-        </div>
-      </article>
+            <label>
+              Select range
+              <input type="range" value="25"/>
+            </label>
 
-      <article>
-        <h2 id="range">Range</h2>
-        <div class="code v-stack gap-3">
-          <label>
-            Select range
-            <input type="range" value="0"/>
-          </label>
-
-          <label>
-            Select range
-            <input type="range" value="25"/>
-          </label>
-
-          <label>
-            Select range
-            <input type="range" value="40" disabled/>
-          </label>
-        </div>
-      </article>
-
-      <article>
-        <h2 id="loading">Loading</h2>
-        <div class="code v-stack gap-3">
-          <div aria-busy="true" style="padding: 50px 0;background-color: var(--cs-surface-container)"></div>
-          <span aria-busy="true" class="mt-3">Loading data...</span>
-          <div class="h-stack gap-3">
-            <button aria-busy="true">Loading...</button>
-            <button aria-busy="true" class="btn-elevated">Loading...</button>
-            <button aria-busy="true" class="btn-tonal">Loading...</button>
-            <button aria-busy="true" class="btn-outlined">Loading...</button>
-            <button aria-busy="true" class="btn-text">Loading...</button>
+            <label>
+              Select range
+              <input type="range" value="40" disabled/>
+            </label>
           </div>
-        </div>
-      </article>
+        </article>
 
-      <article>
-        <h2 id="progress">Progress</h2>
-        <div class="code v-stack gap-3">
-          <progress value="30" max="100"></progress>
-          <progress></progress>
-        </div>
-      </article>
+        <article>
+          <h2 id="loading">Loading</h2>
+          <div class="code v-stack gap-3">
+            <div aria-busy="true" style="padding: 50px 0;background-color: var(--cs-surface-container)"></div>
+            <span aria-busy="true" class="mt-3">Loading data...</span>
+            <div class="h-stack gap-3">
+              <button aria-busy="true">Loading...</button>
+              <button aria-busy="true" class="btn-elevated">Loading...</button>
+              <button aria-busy="true" class="btn-tonal">Loading...</button>
+              <button aria-busy="true" class="btn-outlined">Loading...</button>
+              <button aria-busy="true" class="btn-text">Loading...</button>
+            </div>
+          </div>
+        </article>
 
-      <!-- Grid -->
-      <article>
-        <h2 id="grid">Grid</h2>
-        <div class="code v-stack gap-3 py-3">
-          <div class="grid">
-            <div class="g-col-1">g-col-1</div>
-            <div class="g-col-4">g-col-4</div>
-            <div class="g-col-7">g-col-7</div>
-            <div class="g-col-8">g-col-8</div>
-            <div class="g-col-4">g-col-4</div>
+        <article>
+          <h2 id="progress">Progress</h2>
+          <div class="code v-stack gap-3">
+            <progress value="30" max="100"></progress>
+            <progress></progress>
           </div>
-          <div class="grid">
-            <div class="g-col-4">g-col-4</div>
-            <div class="g-start-5 g-col-4" style="grid-row: 2">g-start-5 g-col-4</div>
-            <div class="g-start-9 g-col-4" style="grid-row: 3">g-start-9 g-col-4</div>
+        </article>
+
+        <!-- Grid -->
+        <article>
+          <h2 id="grid">Grid</h2>
+          <div class="code v-stack gap-3 py-3">
+            <div class="grid">
+              <div class="g-col-1">g-col-1</div>
+              <div class="g-col-4">g-col-4</div>
+              <div class="g-col-7">g-col-7</div>
+              <div class="g-col-8">g-col-8</div>
+              <div class="g-col-4">g-col-4</div>
+            </div>
+            <div class="grid">
+              <div class="g-col-4">g-col-4</div>
+              <div class="g-start-5 g-col-4" style="grid-row: 2">g-start-5 g-col-4</div>
+              <div class="g-start-9 g-col-4" style="grid-row: 3">g-start-9 g-col-4</div>
+            </div>
           </div>
-        </div>
-      </article>
+        </article>
+
+        <article id="color-theme">
+          <h2>Color scheme</h2>
+          <div class="wrapper code p-3" style="background-color: var(--cs-surface-container); border-radius: 16px;">
+            <div class="grid color-scheme"></div>
+          </div>
+        </article>
+      </div>
     </div>
   </main>
   <footer class="mt-3">
