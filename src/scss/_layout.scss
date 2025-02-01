@@ -1,0 +1,37 @@
+$prefix: cs;
+$min-width: 1020px;
+
+main .container {
+  --content-width: 100%;
+  --sidebar-width: 220px;
+  --header-height: 6.5rem;
+
+  display: flex;
+  margin-bottom: 5rem;
+
+  & > aside {
+    position: sticky;
+    top: var(--header-height);
+    align-self: start;
+    width: var(--sidebar-width);
+    padding: 0 var(--#{$prefix}-spacing);
+    border-radius: var(--#{$prefix}-border-radius);
+
+    @media (width <= $min-width) {
+      display: none;
+    }
+
+    nav ul li {
+      padding: calc(.25 * var(--#{$prefix}-x-spacing)) 0;
+    }
+  }
+
+  & > .content {
+    width: calc(var(--content-width) - var(--sidebar-width));
+    padding: 0 var(--#{$prefix}-spacing);
+
+    @media (width <= $min-width) {
+      width: var(--content-width)
+    }
+  }
+}

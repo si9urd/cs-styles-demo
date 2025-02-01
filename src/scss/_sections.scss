@@ -1,0 +1,7 @@
+h2[id],
+article[id] {
+  --anchor-offset: 100px;
+
+  padding-top: var(--anchor-offset);
+  margin-top: calc(-1 * var(--anchor-offset));
+}

@@ -1,0 +1,14 @@
+.color-scheme > div {
+  flex-direction: column;
+  justify-content: flex-start;
+  padding: 0;
+  & > div {
+    text-align: left;
+    width: 100%;
+    padding: var(--cs-spacing);
+  }
+
+  & > div:first-child {
+    height: 120px;
+  }
+}

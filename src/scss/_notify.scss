@@ -1,0 +1,12 @@
+.copied-message {
+  position: fixed;
+  bottom: 2rem;
+  left: 50%;
+  transform: translateX(-50%);
+  min-width: 50vw;
+  padding: var(--cs-spacing) calc(var(--cs-spacing) * 2);
+  background-color: var(--cs-success);
+  color: var(--cs-on-surface);
+  border: 2px solid var(--cs-success);
+  border-radius: var(--cs-border-radius);
+}

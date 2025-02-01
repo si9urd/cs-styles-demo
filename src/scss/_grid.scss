@@ -1,0 +1,12 @@
+.grid {
+  & > div {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: var(--cs-spacing);
+    border-radius: var(--cs-border-radius);
+    color: var(--cs-on-surface);
+    background-color: var(--cs-surface-container);
+    text-align: center;
+  }
+}
