@@ -10,7 +10,8 @@
     "preview": "rsbuild preview"
   },
   "dependencies": {
-    "pretty": "^2.0.0"
+    "pretty": "^2.0.0",
+    "cs-styles": "file:../cs-styles"
   },
   "devDependencies": {
     "@eslint/js": "^9.11.0",

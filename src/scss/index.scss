@@ -1,21 +1,21 @@
-//@use "@oleh-ob/cs-styles";
-//@use "@oleh-ob/cs-styles/scss/index" with (
-//  $page-root: "#root",
-//  $enable-icons: true,
-//  $enable-grid: true,
-//  $grid-breakpoints: (
-//        xs: 0,
-//        sm: 576px,
-//        md: 768px,
-//        lg: 992px,
-//        xl: 1100px,
-//        xxl: 1400px
-//  ),
-//  $theme-colors: (
-//    //'light-primary': red,
-//    //'dark-primary': green
-//  )
-//);
+//@use "cs-styles/dist/cs-styles.css";
+@use "cs-styles/scss/index" with (
+  $page-root: "#root",
+  $enable-icons: true,
+  $enable-grid: true,
+  $grid-breakpoints: (
+        xs: 0,
+        sm: 576px,
+        md: 768px,
+        lg: 992px,
+        xl: 1100px,
+        xxl: 1400px
+  ),
+  $theme-colors: (
+    //'light-primary': red,
+    //'dark-primary': green
+  )
+);
 
 @use "code";
 @use "color-scheme";
