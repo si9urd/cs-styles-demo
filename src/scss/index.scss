@@ -1,5 +1,7 @@
 //@use "cs-styles/dist/cs-styles.css";
+@use "cs-styles/scss/settings/palettes";
 @use "cs-styles/scss/index" with (
+  $prefix: "cs",
   $page-root: "#root",
   $enable-icons: true,
   $enable-grid: true,
@@ -11,10 +13,7 @@
         xl: 1100px,
         xxl: 1400px
   ),
-  $theme-colors: (
-    //'light-primary': red,
-    //'dark-primary': green
-  )
+  $theme-colors: palettes.$teal,
 );
 
 @use "code";
