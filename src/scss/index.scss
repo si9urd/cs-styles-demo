@@ -1,19 +1,16 @@
 //@use "cs-styles/dist/cs-styles.css";
 @use "cs-styles/scss/settings/palettes";
-@use "cs-styles/scss/index" with (
+@use "cs-styles/scss/index" as styles with (
   $prefix: "cs",
-  $page-root: "#root",
-  $enable-icons: true,
-  $enable-grid: true,
-  $grid-breakpoints: (
-        xs: 0,
-        sm: 576px,
-        md: 768px,
-        lg: 992px,
-        xl: 1100px,
-        xxl: 1400px
-  ),
-  $theme-colors: palettes.$teal,
+  $theme-colors: palettes.$indigo,
+);
+
+@use "cs-grid/scss/index" as cs-grid with (
+  $grid: "bootstrap" // //  auto | bootstrap | boosted | simple
+);
+
+@use "cs-layouts/scss/index" as cs-layouts with (
+  $page-root: "#root"
 );
 
 @use "code";
