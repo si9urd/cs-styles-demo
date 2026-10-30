@@ -2,38 +2,14 @@ export function generateColorSchemeHtml() {
   const colorScheme = document.querySelector('.color-scheme')
   const colorsMap = {
     'primary': 'on-primary',
-    'secondary': 'on-secondary',
-    'tertiary': 'on-tertiary',
-    'error': 'on-error',
-    'primary-container': 'on-primary-container',
-    'secondary-container': 'on-secondary-container',
-    'tertiary-container': 'on-tertiary-container',
-    'error-container': 'on-error-container',
-    'primary-fixed': 'on-primary-fixed',
-    'primary-fixed-dim': 'on-primary-fixed',
-    'secondary-fixed': 'on-secondary-fixed',
-    'secondary-fixed-dim': 'on-secondary-fixed',
-    'tertiary-fixed': 'on-tertiary-fixed',
-    'tertiary-fixed-dim': 'on-tertiary-fixed-variant',
-
-    'background': 'on-background',
     'surface': 'on-surface',
-    'surface-variant': 'on-surface-variant',
-    'surface-tint': 'on-surface',
-    'surface-dim': 'on-surface',
-    'surface-bright': 'on-surface',
-    'surface-container-lowest': 'on-surface',
-    'surface-container-low': 'on-surface',
     'surface-container': 'on-surface',
-    'surface-container-high': 'on-surface',
-    'surface-container-highest': 'on-surface',
-    'inverse-surface': 'surface',
-
+    'on-surface-variant': null,
     'outline': null,
     'outline-variant': null,
-    'shadow': null,
-    'scrim': null,
-    'inverse-primary': null,
+    'error': null,
+    'warning': null,
+    'success': null,
   }
 
   const html = []

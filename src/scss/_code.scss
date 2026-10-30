@@ -6,7 +6,23 @@
   font-size: 13px;
 }
 
+// Demo-only spacing: kept out of the examples, so snippets show pure cs-styles markup
 .code {
+  display: flex;
+  flex-direction: column;
+  gap: var(--cs-spacing);
   overflow-x: auto;
-  padding-bottom: var(--cs-spacing);
+  padding-block: var(--cs-spacing);
+
+  label:has(input) + label:has(input) {
+    margin-top: calc(var(--cs-spacing) * .5);
+  }
+}
+
+menu.code {
+  flex-direction: row;
+}
+
+div:has(> pre) + .code {
+  margin-top: calc(var(--cs-spacing) * 2);
 }

@@ -1,8 +1,8 @@
 //@use "cs-styles/dist/cs-styles.css";
-@use "cs-styles/scss/settings/palettes";
+@use "cs-styles/scss/settings/icons-extra";
 @use "cs-styles/scss/index" as styles with (
   $prefix: "cs",
-  $theme-colors: palettes.$indigo,
+  $icons: icons-extra.$icon-set,
 );
 
 @use "cs-grid/scss/index" as cs-grid with (
@@ -20,3 +20,15 @@
 @use "notify";
 @use "sections";
 
+
+// Icon from cs-styles: <i style="--icon: var(--cs-icon-add)"></i>, painted with the text color.
+// Layer generic: button and menu set their own icon size in components
+@layer generic {
+  i[style*="--icon"] {
+    display: inline-block;
+    width: 1.5rem;
+    height: 1.5rem;
+    background-color: currentcolor;
+    mask: var(--icon) center / contain no-repeat;
+  }
+}

@@ -27,6 +27,9 @@ main .container {
   }
 
   & > .content {
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
     width: calc(var(--content-width) - var(--sidebar-width));
     padding: 0 var(--#{$prefix}-spacing);
 
