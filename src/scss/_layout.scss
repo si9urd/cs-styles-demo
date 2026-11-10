@@ -1,4 +1,4 @@
-$prefix: cs;
+$prefix: cs-;
 $min-width: 1020px;
 
 main .container {
@@ -14,15 +14,15 @@ main .container {
     top: var(--header-height);
     align-self: start;
     width: var(--sidebar-width);
-    padding: 0 var(--#{$prefix}-spacing);
-    border-radius: var(--#{$prefix}-border-radius);
+    padding: 0 var(--#{$prefix}gap);
+    border-radius: var(--#{$prefix}border-radius);
 
     @media (width <= $min-width) {
       display: none;
     }
 
     nav ul li {
-      padding: calc(.25 * var(--#{$prefix}-x-spacing)) 0;
+      padding: calc(.25 * var(--#{$prefix}x-spacing)) 0;
     }
   }
 
@@ -31,7 +31,7 @@ main .container {
     flex-direction: column;
     gap: 3rem;
     width: calc(var(--content-width) - var(--sidebar-width));
-    padding: 0 var(--#{$prefix}-spacing);
+    padding: 0 var(--#{$prefix}gap);
 
     @media (width <= $min-width) {
       width: var(--content-width)

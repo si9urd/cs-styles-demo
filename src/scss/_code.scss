@@ -1,5 +1,5 @@
 .language-html {
-  margin-top: var(--cs-spacing);
+  margin-top: var(--cs-gap);
   border-radius: var(--cs-border-radius);
   background-color: var(--cs-surface-container);
   font-family: "Source Code Pro", monospace;
@@ -10,12 +10,12 @@
 .code {
   display: flex;
   flex-direction: column;
-  gap: var(--cs-spacing);
+  gap: var(--cs-gap);
   overflow-x: auto;
-  padding-block: var(--cs-spacing);
+  padding-block: var(--cs-gap);
 
   label:has(input) + label:has(input) {
-    margin-top: calc(var(--cs-spacing) * .5);
+    margin-top: calc(var(--cs-gap) * .5);
   }
 }
 
@@ -24,5 +24,5 @@ menu.code {
 }
 
 div:has(> pre) + .code {
-  margin-top: calc(var(--cs-spacing) * 2);
+  margin-top: calc(var(--cs-gap) * 2);
 }
